@@ -1,0 +1,17 @@
+{
+  "name": "SafeDose-JOR",
+  "short_name": "SafeDose",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f7fbfa",
+  "theme_color": "#0d7778",
+  "description": "Medication safety at home | سلامة الدواء في المنزل",
+  "icons": [
+    {
+      "src": "icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

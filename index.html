@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0d7778"><meta name="description" content="SafeDose-JOR: دليل مبسط لسلامة الدواء في المنزل.">
+<link rel="manifest" href="manifest.json"><link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css">
+<title>SafeDose-JOR | سلامة الدواء في المنزل</title>
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#" aria-label="SafeDose-JOR home"><span class="brand-icon">✚</span><span><b>SafeDose-JOR</b><small data-i18n="tagline">سلامة الدواء تبدأ من المنزل</small></span></a>
+  <button class="lang-btn" id="langBtn" type="button">English</button>
+</header>
+<section class="hero">
+  <div class="hero-copy">
+    <span class="eyebrow" data-i18n="eyebrow">دليل توعوي للعائلة</span>
+    <h1 data-i18n="heroTitle">استخدم دواءك بأمان.<br>كل جرعة تهم.</h1>
+    <p data-i18n="heroText">خطوات بسيطة تساعدك على تقليل الأخطاء الدوائية وحماية أسرتك.</p>
+    <a class="hero-cta" href="#before" data-i18n="start">ابدأ التحقق الآن <span>←</span></a>
+  </div>
+  <div class="hero-art" aria-hidden="true"><div class="orb orb1"></div><div class="pillbox"><div class="pill-cross">✚</div><div class="pill-line"></div></div><span class="float f1">✓</span><span class="float f2">＋</span></div>
+</section>
+<main>
+  <section class="notice"><span class="notice-icon">ⓘ</span><p data-i18n="disclaimer">هذا التطبيق للتثقيف العام ولا يستبدل وصفة الطبيب أو نصيحة الصيدلي. لا تبدأ دواءً أو توقفه أو تغيّر جرعته اعتماداً على التطبيق وحده.</p></section>
+  <nav class="quicknav" aria-label="Sections">
+    <a href="#before"><span>✓</span><b data-i18n="nav1">قبل تناول الدواء</b></a>
+    <a href="#storage"><span>⌂</span><b data-i18n="nav2">التخزين الآمن</b></a>
+    <a href="#missed"><span>◷</span><b data-i18n="nav3">الجرعة المنسية</b></a>
+    <a href="#emergency"><span>!</span><b data-i18n="nav4">الطوارئ</b></a>
+    <a href="#quiz"><span>✎</span><b data-i18n="nav5">اختبر معلوماتك</b></a>
+  </nav>
+
+  <section class="section" id="before">
+    <div class="section-head"><div><span class="eyebrow" data-i18n="step">01 · تحقق سريع</span><h2 data-i18n="beforeTitle">قبل تناول الدواء</h2><p data-i18n="beforeSub">توقف لحظة وراجع هذه النقاط في كل مرة.</p></div><span class="section-icon teal">✓</span></div>
+    <div class="check-layout">
+      <div class="check-card">
+        <div class="progress-row"><b data-i18n="checkProgress">قائمة التحقق</b><span id="checkCount">0 / 6</span></div><div class="progress"><span id="checkBar"></span></div>
+        <div id="checklist" class="checklist"></div>
+        <button class="btn primary full" id="resetCheck" data-i18n="reset">إعادة ضبط القائمة</button>
+        <p class="micro" id="checkFeedback" aria-live="polite"></p>
+      </div>
+      <aside class="tip-card"><div class="tip-icon">💊</div><h3 data-i18n="paraTitle">انتبه للباراسيتامول</h3><p data-i18n="paraText">قد تحتوي أدوية الألم والرشح والإنفلونزا على المادة الفعالة نفسها: باراسيتامول (Paracetamol / Acetaminophen). لا تجمع مستحضرين يحتويان عليها دون توجيه مختص؛ فالزيادة قد تسبب تلفاً خطيراً في الكبد.</p><div class="mini-tag" data-i18n="tip">اقرأ المادة الفعالة، وليس الاسم التجاري فقط.</div></aside>
+    </div>
+  </section>
+
+  <section class="section" id="storage">
+    <div class="section-head"><div><span class="eyebrow" data-i18n="step2">02 · احمِ دواءك</span><h2 data-i18n="storageTitle">التخزين الآمن والتخلص السليم</h2><p data-i18n="storageSub">طريقة التخزين جزء من سلامة العلاج.</p></div><span class="section-icon blue">⌂</span></div>
+    <div class="feature-grid">
+      <article class="feature"><span class="feature-icon">🔒</span><h3 data-i18n="s1">بعيداً عن الأطفال</h3><p data-i18n="s1t">احفظ الأدوية في خزانة مرتفعة ومغلقة، بعيداً عن النظر والمتناول. أعد إغلاق العبوة بعد كل استخدام.</p></article>
+      <article class="feature"><span class="feature-icon">🌡️</span><h3 data-i18n="s2">الحرارة والرطوبة</h3><p data-i18n="s2t">اتبع تعليمات العبوة. غالباً يُحفظ الدواء في مكان بارد وجاف، بعيداً عن الشمس والحرارة. لا تفترض أن الحمام أو السيارة مكان مناسب.</p></article>
+      <article class="feature"><span class="feature-icon">📦</span><h3 data-i18n="s3">العبوة الأصلية</h3><p data-i18n="s3t">احتفظ بالدواء في عبوته الأصلية مع الاسم والملصق وتاريخ الصلاحية. لا تخلط الأقراص في عبوات مجهولة.</p></article>
+      <article class="feature"><span class="feature-icon">🚫</span><h3 data-i18n="s4">لا تشارك الدواء</h3><p data-i18n="s4t">لا تستخدم دواءً موصوفاً لشخص آخر، ولا تستخدم دواءً منتهي الصلاحية أو تغير لونه أو رائحته أو شكله.</p></article>
+    </div>
+    <div class="disposal"><div class="disposal-icon">♻</div><div><h3 data-i18n="disposeTitle">كيف أتخلص من الدواء غير المستخدم؟</h3><p data-i18n="disposeText">اسأل الصيدلي أو الجهة الصحية المحلية عن طريقة الاسترجاع أو التخلص المعتمدة في منطقتك. لا ترمِ الدواء في المغسلة أو المرحاض ولا تخلطه مع النفايات قبل معرفة التعليمات الخاصة به؛ فطريقة التخلص تختلف حسب نوع الدواء.</p></div></div>
+  </section>
+
+  <section class="section" id="missed">
+    <div class="section-head"><div><span class="eyebrow" data-i18n="step3">03 · تصرف بهدوء</span><h2 data-i18n="missedTitle">جرعة منسية أو جرعة زائدة؟</h2><p data-i18n="missedSub">التصرف الصحيح يختلف حسب الدواء؛ لا تخمّن.</p></div><span class="section-icon amber">◷</span></div>
+    <div class="two-cards">
+      <article class="action-card missed-card"><span class="action-label" data-i18n="missedLabel">إذا نسيت جرعة</span><h3 data-i18n="missedHead">لا تضاعف الجرعة التالية</h3><ul><li data-i18n="m1">راجع النشرة الداخلية للدواء لمعرفة تعليمات الجرعة المنسية.</li><li data-i18n="m2">إذا لم تكن التعليمات واضحة، اتصل بالصيدلي أو الطبيب قبل اتخاذ القرار.</li><li data-i18n="m3">بعض الأدوية حساسة جداً لتوقيت الجرعة؛ لا تطبق قاعدة عامة على جميع الأدوية.</li></ul></article>
+      <article class="action-card double-card"><span class="action-label" data-i18n="doubleLabel">إذا تناولت جرعة إضافية أو مزدوجة</span><h3 data-i18n="doubleHead">اطلب المشورة الطبية فوراً</h3><ul><li data-i18n="d1">لا تتناول جرعة أخرى لتعويض أو تصحيح ما حدث.</li><li data-i18n="d2">اتصل بالطبيب أو الصيدلي أو توجّه لتقييم طبي عاجل، حتى إن لم تظهر أعراض؛ فبعض حالات التسمم تتأخر أعراضها.</li><li data-i18n="d3">احتفظ بعبوة الدواء وسجّل الكمية والوقت إن أمكن.</li></ul></article>
+    </div>
+    <p class="caution-line"><b data-i18n="important">مهم:</b> <span data-i18n="highRisk">إذا كان الدواء إنسوليناً أو مميعاً للدم أو دواءً للصرع أو دواءً أسبوعياً عالي الخطورة، اطلب توجيهاً طبياً خاصاً ولا تعتمد على نصائح عامة.</span></p>
+  </section>
+
+  <section class="section emergency-section" id="emergency">
+    <div class="section-head"><div><span class="eyebrow" data-i18n="step4">04 · لا تؤخر طلب المساعدة</span><h2 data-i18n="emTitle">متى أحتاج إلى الطوارئ؟</h2><p data-i18n="emSub">اتصل بالطوارئ فوراً عند ظهور أي علامة خطرة.</p></div><span class="section-icon red">!</span></div>
+    <div class="emergency-grid">
+      <div class="redflags">
+        <div class="redflag"><span>🫁</span><b data-i18n="e1">صعوبة التنفس أو الاختناق</b></div>
+        <div class="redflag"><span>🧠</span><b data-i18n="e2">فقدان الوعي أو تشنجات أو صعوبة الإيقاظ</b></div>
+        <div class="redflag"><span>🫀</span><b data-i18n="e3">ألم شديد في الصدر أو انهيار مفاجئ</b></div>
+        <div class="redflag"><span>⚠️</span><b data-i18n="e4">تورم اللسان أو الحلق أو تورم الوجه مع صعوبة التنفس</b></div>
+      </div>
+      <div class="call-card"><span class="call-small" data-i18n="jordan">في الأردن</span><div class="call-number">911</div><p data-i18n="callText">رقم الطوارئ الموحد في المملكة الأردنية الهاشمية.</p><a class="call-btn" href="tel:911" data-i18n="callNow">اتصل بالطوارئ 911</a><p class="call-note" data-i18n="overdoseNote">عند الاشتباه بجرعة زائدة، لا تنتظر ظهور الأعراض؛ اطلب المشورة الطبية العاجلة. لا تحاول إحداث القيء.</p></div>
+    </div>
+  </section>
+
+  <section class="section" id="quiz">
+    <div class="section-head"><div><span class="eyebrow" data-i18n="step5">05 · تعلّم بالتجربة</span><h2 data-i18n="quizTitle">اختبر معلوماتك</h2><p data-i18n="quizSub">خمسة أسئلة قصيرة لترسيخ الممارسات الآمنة.</p></div><span class="section-icon purple">✎</span></div>
+    <div class="quiz-card"><div class="quiz-top"><b data-i18n="knowledgeCheck">اختبار سلامة الدواء</b><span id="quizProgress">1 / 5</span></div><div class="progress"><span id="quizBar"></span></div><div id="quizArea"></div><div class="quiz-controls"><button class="btn ghost" id="prevQ" data-i18n="prev">السابق</button><button class="btn primary" id="nextQ" data-i18n="next">التالي</button></div><div id="quizResult" class="quiz-result" hidden aria-live="polite"></div><button id="restartQuiz" class="btn primary full" hidden data-i18n="retry">إعادة الاختبار</button></div>
+  </section>
+
+  <section class="section references" id="references">
+    <div class="section-head"><div><span class="eyebrow" data-i18n="sources">مصادر موثوقة</span><h2 data-i18n="refsTitle">اقرأ من المصادر الأصلية</h2><p data-i18n="refsSub">روابط إرشادية للمزيد من المعلومات.</p></div><span class="section-icon blue">↗</span></div>
+    <div class="ref-list">
+      <a href="https://www.fda.gov/drugs/safe-use-over-counter-pain-relievers-and-fever-reducers/acetaminophen" target="_blank" rel="noopener"><span>FDA</span><b data-i18n="ref1">سلامة الباراسيتامول وتجنب تكرار المادة الفعالة</b><i>↗</i></a>
+      <a href="https://medlineplus.gov/ency/patientinstructions/000534.htm" target="_blank" rel="noopener"><span>MedlinePlus</span><b data-i18n="ref2">تخزين الأدوية بأمان</b><i>↗</i></a>
+      <a href="https://sps.nhs.uk/articles/advising-on-missed-or-delayed-doses-of-medicines/" target="_blank" rel="noopener"><span>NHS SPS</span><b data-i18n="ref3">إرشادات الجرعات المنسية أو المتأخرة</b><i>↗</i></a>
+      <a href="https://www.fda.gov/drugs/safe-disposal-medicines/disposal-unused-medicines-what-you-should-know" target="_blank" rel="noopener"><span>FDA</span><b data-i18n="ref4">التخلص الآمن من الأدوية غير المستخدمة</b><i>↗</i></a>
+      <a href="https://jordan.gov.jo/EN/List/Contact_Us_2" target="_blank" rel="noopener"><span>Jordan.gov.jo</span><b data-i18n="ref5">أرقام الطوارئ في الأردن</b><i>↗</i></a>
+    </div>
+  </section>
+</main>
+<footer><div class="footer-brand">✚ SafeDose-JOR</div><p data-i18n="footer">معاً لاستخدام أكثر أماناً للأدوية في المنزل.</p><small>Educational project · Jordan</small></footer>
+<script src="app.js"></script>
+</body></html>
